@@ -1,0 +1,195 @@
+/* ==========================================================================
+   RETRO THEME - MINECRAFT ARCADE AESTHETIC
+   ========================================================================== */
+
+:root {
+  /* Paleta Inspirada en Minecraft & Retro Arcade */
+  --bg-darkest: #07090e;
+  --bg-darker: #0d1117;
+  --bg-card: #141a24;
+  --bg-card-hover: #1b2432;
+  --bg-elevated: #212c3d;
+  
+  /* Bordes de Bloques y GUI de Minecraft */
+  --border-stone: #2f3846;
+  --border-bedrock: #1d222a;
+  --border-highlight: #465369;
+  
+  /* Colores de Acento y Neón */
+  --neon-green: #55ff55;       /* Esmeralda */
+  --neon-cyan: #55ffff;        /* Diamante */
+  --neon-gold: #ffaa00;        /* Oro */
+  --neon-red: #ff5555;         /* Redstone */
+  --neon-purple: #c586c0;      /* Amatista */
+  --neon-blue: #3b82f6;        /* Lapislázuli */
+  
+  /* Textos */
+  --text-main: #f0f3f6;
+  --text-muted: #8b9bb4;
+  --text-dim: #5c6b82;
+
+  /* Tipografías */
+  --font-pixel: 'Press Start 2P', monospace, sans-serif;
+  --font-retro: 'VT323', monospace, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Sombras Pixel */
+  --pixel-shadow: 4px 4px 0px #000000;
+  --pixel-shadow-sm: 2px 2px 0px #000000;
+  --pixel-shadow-neon: 0 0 12px rgba(85, 255, 255, 0.4);
+}
+
+/* Reset y base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-darkest);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 50% 20%, #111827 0%, #07090e 80%);
+}
+
+/* ==========================================================================
+   EFECTO CRT SCANLINES & VIÑETA RETRO
+   ========================================================================== */
+
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+  background: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%),
+    radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: 100% 4px, 100% 100%;
+}
+
+body:not(.crt-enabled) .crt-overlay {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   CANVAS DE PARTÍCULAS
+   ========================================================================== */
+
+#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   CAJAS Y BORDES RETRO ESTILO MINECRAFT
+   ========================================================================== */
+
+.retro-box {
+  background-color: var(--bg-card);
+  border: 3px solid var(--border-stone);
+  box-shadow: 
+    inset 2px 2px 0px var(--border-highlight),
+    inset -2px -2px 0px var(--border-bedrock),
+    var(--pixel-shadow);
+  position: relative;
+}
+
+.retro-box:hover {
+  border-color: var(--border-highlight);
+}
+
+/* Clases utilitarias de texto */
+.text-neon-green { color: var(--neon-green); text-shadow: 0 0 8px rgba(85, 255, 85, 0.5); }
+.text-neon-cyan  { color: var(--neon-cyan); text-shadow: 0 0 8px rgba(85, 255, 255, 0.5); }
+.text-neon-gold  { color: var(--neon-gold); text-shadow: 0 0 8px rgba(255, 170, 0, 0.5); }
+.text-neon-red   { color: var(--neon-red); text-shadow: 0 0 8px rgba(255, 85, 85, 0.5); }
+
+/* Badges y etiquetas retro */
+.retro-badge {
+  display: inline-block;
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  background-color: var(--bg-elevated);
+  border: 2px solid var(--neon-green);
+  color: var(--neon-green);
+  box-shadow: var(--pixel-shadow-sm);
+  margin-bottom: 1.25rem;
+}
+
+.tag-accent {
+  color: var(--neon-cyan);
+  font-weight: 700;
+  text-decoration: underline dotted var(--neon-green);
+}
+
+.pixel-star {
+  color: var(--neon-gold);
+  display: inline-block;
+  animation: pulseStar 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseStar {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.arrow-blink {
+  display: inline-block;
+  animation: blinkArrow 1s infinite steps(2, start);
+}
+
+@keyframes blinkArrow {
+  to { visibility: hidden; }
+}
+
+/* Iconos Pixel simulados */
+.pixel-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.sword-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2355ffff' d='M14 0h2v2h-2zm-2 2h2v2h-2zm-2 2h2v2h-2zm-2 2h2v2H8zm-2 2h2v2H6zm-2 2h2v2H4z'/%3E%3Cpath fill='%23ffaa00' d='M2 10h2v2H2zm4 4h2v2H6zm-2-2h2v2H4z'/%3E%3Cpath fill='%23555555' d='M0 14h2v2H0z'/%3E%3C/svg%3E");
+}
+
+/* Scrollbar retro */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-darkest);
+  border-left: 2px solid var(--border-stone);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-stone);
+  border: 2px solid var(--border-highlight);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}

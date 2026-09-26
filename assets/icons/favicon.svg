@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#07090e" rx="4"/>
+  <rect x="2" y="2" width="28" height="28" fill="#141a24" stroke="#2f3846" stroke-width="2"/>
+  <!-- Pixel Sword Icon -->
+  <path fill="#55ffff" d="M24 4h4v4h-4zm-4 4h4v4h-4zm-4 4h4v4h-4zm-4 4h4v4h-4z"/>
+  <path fill="#ffaa00" d="M8 20h4v4H8zm4 4h4v4h-4zm-4 0h-4v4h4z"/>
+  <path fill="#555555" d="M4 28h4v4H4z"/>
+  <rect x="22" y="6" width="2" height="2" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071a12"/>
+      <stop offset="100%" stop-color="#11291b"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgHeal)"/>
+  
+  <!-- Hoguera Pixel / Campfire & Curación -->
+  <g transform="translate(240, 60)">
+    <!-- Resplandor verde de curación -->
+    <circle cx="80" cy="110" r="90" fill="#55ff55" opacity="0.12"/>
+    <circle cx="80" cy="110" r="50" fill="#ffff55" opacity="0.15"/>
+    
+    <!-- Troncos de la hoguera -->
+    <rect x="25" y="150" width="110" height="20" fill="#5c3a21" rx="4"/>
+    <rect x="40" y="140" width="80" height="15" fill="#3e2716" rx="3"/>
+    
+    <!-- Llamas de fuego RPG / Pixel -->
+    <polygon points="80,50 105,130 55,130" fill="#ffaa00"/>
+    <polygon points="80,75 98,130 62,130" fill="#ffff55"/>
+    <polygon points="65,90 80,130 50,130" fill="#ff5555"/>
+    
+    <!-- Partículas de regeneración (Cruces verdes de vida) -->
+    <g fill="#55ff55">
+      <!-- Cruz 1 -->
+      <rect x="30" y="30" width="6" height="18"/>
+      <rect x="24" y="36" width="18" height="6"/>
+      <!-- Cruz 2 -->
+      <rect x="120" y="45" width="6" height="18"/>
+      <rect x="114" y="51" width="18" height="6"/>
+      <!-- Cruz 3 (pequeña) -->
+      <rect x="75" y="10" width="4" height="12"/>
+      <rect x="71" y="14" width="12" height="4"/>
+    </g>
+  </g>
+
+  <!-- Suelo de piedra / adoquín -->
+  <rect x="0" y="270" width="640" height="90" fill="#151b17"/>
+  <rect x="0" y="266" width="640" height="4" fill="#55ff55" opacity="0.4"/>
+
+  <text x="320" y="310" font-family="'Courier New', monospace" font-weight="900" font-size="18" fill="#55ff55" text-anchor="middle" letter-spacing="2">
+    [ SISTEMA DE CURACIÓN RPG: HOGUERA ]
+  </text>
+  <text x="320" y="335" font-family="'Courier New', monospace" font-size="12" fill="#a3e635" text-anchor="middle">
+    CONDITIONALEVENTS &bull; MMOITEMS &bull; COMBAT RECOVERY
+  </text>
+</svg>

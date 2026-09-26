@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060b14"/>
+      <stop offset="100%" stop-color="#141a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgCine)"/>
+  
+  <!-- Cuadrícula y barras cinematográficas -->
+  <rect x="0" y="0" width="640" height="40" fill="#000000"/>
+  <rect x="0" y="320" width="640" height="40" fill="#000000"/>
+  <rect x="20" y="55" width="600" height="250" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="10, 10"/>
+  
+  <!-- Icono Cámara Retro Pixel -->
+  <g transform="translate(260, 100) scale(3.5)">
+    <rect x="6" y="8" width="22" height="16" fill="#2563eb"/>
+    <rect x="10" y="4" width="8" height="4" fill="#3b82f6"/>
+    <!-- Lente -->
+    <rect x="13" y="12" width="8" height="8" fill="#1d4ed8"/>
+    <rect x="15" y="14" width="4" height="4" fill="#60a5fa"/>
+    <rect x="17" y="14" width="2" height="2" fill="#ffffff"/>
+    <!-- Rollo -->
+    <rect x="28" y="11" width="4" height="10" fill="#1e293b"/>
+  </g>
+
+  <text x="320" y="270" font-family="'Courier New', monospace" font-weight="900" font-size="18" fill="#55ffff" text-anchor="middle" letter-spacing="3">
+    [ CINEMÁTICAS EN MYTHICMOBS ]
+  </text>
+  <text x="320" y="295" font-family="'Courier New', monospace" font-size="13" fill="#8b9bb4" text-anchor="middle">
+    POWERCAMERA &bull; CUTSCENES &bull; BOSS INTROS
+  </text>
+</svg>

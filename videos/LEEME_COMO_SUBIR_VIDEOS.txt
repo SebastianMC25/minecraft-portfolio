@@ -1,0 +1,26 @@
+========================================================================
+ GUÍA: CÓMO AGREGAR TUS PROPIOS VIDEOS AL PORTAFOLIO DE MINECRAFT
+========================================================================
+
+Tienes 2 opciones para mostrar videos de tus creaciones:
+
+OPCIÓN 1: VIDEOS EN YOUTUBE O STREAMABLE (¡Recomendado para GitHub Pages!)
+------------------------------------------------------------------------
+1. Sube tu video a YouTube (público o no listado) o Streamable.
+2. Abre el archivo `js/projects.js`.
+3. En el proyecto deseado, cambia:
+     videoType: 'youtube',
+     videoSrc: 'https://www.youtube.com/watch?v=TU_ID_DE_VIDEO'
+   o si es Streamable:
+     videoType: 'streamable',
+     videoSrc: 'https://streamable.com/tu_codigo'
+
+OPCIÓN 2: VIDEOS LOCALES (.MP4 O .WEBM)
+------------------------------------------------------------------------
+1. Guarda tu archivo de video dentro de esta misma carpeta (ej: `videos/mi_boss.mp4`).
+   Nota: Intenta que el archivo no supere los 25MB para que GitHub no te dé advertencias.
+2. En `js/projects.js`, configura:
+     videoType: 'mp4',
+     videoSrc: 'videos/mi_boss.mp4'
+
+¡Listo! Al hacer clic en la tarjeta del proyecto en la web, el video se reproducirá automáticamente en la pantalla arcade con todos los controles.

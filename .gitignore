@@ -1,0 +1,11 @@
+# Backups locales de videos de alta definición (mantener en disco local)
+videos_backup/
+videos/temp_*
+videos/*_test.mp4
+
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

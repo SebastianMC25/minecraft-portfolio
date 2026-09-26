@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgMob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d"/>
+      <stop offset="100%" stop-color="#1b2432"/>
+    </linearGradient>
+    <pattern id="pixelGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#161f2c" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgMob)"/>
+  <rect width="640" height="360" fill="url(#pixelGrid)" opacity="0.6"/>
+  
+  <!-- Marco retro interno -->
+  <rect x="20" y="20" width="600" height="320" fill="none" stroke="#2f3846" stroke-width="4"/>
+  
+  <!-- Pixel Golem / Boss Silhouette -->
+  <g transform="translate(240, 80) scale(4)">
+    <!-- Ojos brillantes rojos -->
+    <rect x="12" y="8" width="16" height="14" fill="#3b4252"/>
+    <rect x="15" y="12" width="2" height="2" fill="#ff5555"/>
+    <rect x="23" y="12" width="2" height="2" fill="#ff5555"/>
+    <!-- Cuerpo y brazos de golem -->
+    <rect x="8" y="22" width="24" height="20" fill="#2e3440"/>
+    <rect x="2" y="22" width="6" height="26" fill="#434c5e"/>
+    <rect x="32" y="22" width="6" height="26" fill="#434c5e"/>
+    <!-- Detalles de enredadera/musgo pixel -->
+    <rect x="16" y="26" width="4" height="4" fill="#55ff55"/>
+    <rect x="22" y="32" width="4" height="4" fill="#55ff55"/>
+  </g>
+  
+  <!-- Texto Arcade Overlay -->
+  <text x="320" y="295" font-family="'Courier New', monospace" font-weight="900" font-size="20" fill="#55ff55" text-anchor="middle" letter-spacing="4">
+    [ MYTHICMOBS // MOB AI CONFIG ]
+  </text>
+  <text x="320" y="320" font-family="'Courier New', monospace" font-size="14" fill="#8b9bb4" text-anchor="middle">
+    MULTI-PHASE &bull; SKILLS YAML &bull; PURE VANILLA AI
+  </text>
+</svg>

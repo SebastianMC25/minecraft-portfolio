@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <rect width="640" height="360" fill="#0c1017"/>
+  <rect x="20" y="20" width="600" height="320" fill="none" stroke="#2f3846" stroke-width="4"/>
+  <g transform="translate(280, 110) scale(4)">
+    <polygon points="10,5 26,15 10,25" fill="#55ff55"/>
+  </g>
+  <text x="320" y="270" font-family="'Courier New', monospace" font-weight="900" font-size="18" fill="#55ffff" text-anchor="middle">
+    MINECRAFT SHOWCASE VIDEO
+  </text>
+  <text x="320" y="295" font-family="'Courier New', monospace" font-size="13" fill="#8b9bb4" text-anchor="middle">
+    CLIC PARA REPRODUCIR DEMO
+  </text>
+</svg>

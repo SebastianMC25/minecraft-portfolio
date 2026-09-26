@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Configurator & Systems | Retro Portfolio</title>
+  <meta name="description" content="Portafolio retro de configuración de Minecraft especializado en MythicMobs, ConditionalEvents y CoreTools.">
+  
+  <!-- Favicon Pixel -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Retro Pixel & Monospace -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/retro-theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body class="crt-enabled">
+  <!-- Efecto CRT Scanlines & Viñeta -->
+  <div class="crt-overlay" id="crtOverlay" aria-hidden="true"></div>
+
+  <!-- Canvas de Partículas Retro estilo Minecraft -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- Barra Superior / HUD Arcade -->
+  <header class="retro-header">
+    <div class="header-container">
+      <div class="logo-box">
+        <span class="pixel-icon sword-icon"></span>
+        <span class="logo-text">DEV<span class="highlight">_</span>CRAFT</span>
+        <span class="status-badge" title="Disponible para proyectos">
+          <span class="status-dot"></span> DISPONIBLE
+        </span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#inicio" class="nav-link active" data-nav="inicio">INICIO</a>
+        <a href="#especialidades" class="nav-link" data-nav="especialidades">SERVICIOS</a>
+        <a href="#proyectos" class="nav-link" data-nav="proyectos">PROYECTOS & VIDEOS</a>
+        <a href="#contacto" class="nav-link" data-nav="contacto">CONTACTO</a>
+      </nav>
+
+      <div class="hud-controls">
+        <button id="btnSoundToggle" class="retro-btn btn-icon" title="Activar/Silenciar efectos 8-bit" aria-label="Control de audio">
+          <span class="btn-icon-label" id="soundIcon">🔊</span>
+          <span class="btn-text">SFX</span>
+        </button>
+        <button id="btnCrtToggle" class="retro-btn btn-icon" title="Alternar efecto monitor CRT" aria-label="Efecto CRT">
+          <span class="btn-icon-label">📺</span>
+          <span class="btn-text">CRT</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <div class="retro-badge">MINECRAFT SYSTEMS & CONFIGURATION</div>
+        <h1 class="hero-title">
+          CONFIGURADOR DE <br>
+          <span class="text-neon-green">MINECRAFT</span> <span class="text-neon-cyan">RPG</span>
+        </h1>
+        <p class="hero-subtitle">
+          Especialista en lógica avanzada con <span class="tag-accent">MythicMobs</span>, 
+          eventos dinámicos en <span class="tag-accent">ConditionalEvents</span> y 
+          sistemas económicos / estaciones de forja en <span class="tag-accent">CoreTools</span>.
+        </p>
+
+        <div class="hero-stats-panel retro-box">
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">ENFOQUE MINECRAFT</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">MOTORES CORE (MM/CE/CT)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">HD</span>
+            <span class="stat-label">SHOWCASES EN VIDEO</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="retro-btn btn-primary">
+            VER PROYECTOS & VIDEOS <span class="arrow-blink">▶</span>
+          </a>
+          <a href="#contacto" class="retro-btn btn-secondary">
+            CONTACTAR <span class="pixel-star">★</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN ESPECIALIDADES / SERVICIOS -->
+    <section id="especialidades" class="section">
+      <div class="section-header">
+        <div class="section-tag">[ CORE_SKILLS.YML ]</div>
+        <h2 class="section-title">MY SERVICES & SPECIALTIES</h2>
+        <p class="section-desc">Technical development and system configuration focused exclusively on Minecraft servers.</p>
+      </div>
+
+      <div class="specialties-grid">
+        <!-- Tarjeta 1: MythicMobs -->
+        <article class="specialty-card retro-box">
+          <div class="card-icon-banner">
+            <span class="specialty-icon mob-icon">👾</span>
+            <span class="category-pill">RPG ENGINE</span>
+          </div>
+          <h3 class="specialty-title">MythicMobs</h3>
+          <p class="specialty-text">
+            Creation and fine-tuning of deep combat mechanics and automated systems with zero reliance on external modeling plugins:
+          </p>
+          <ul class="specialty-list">
+            <li><strong>Mob Configuration:</strong> Custom bosses with tactical AI, health-based phases, auras, staggered damage, custom projectiles, and complex pure YAML skills.</li>
+            <li><strong>Cinematic Integration:</strong> Orbital cutscenes and cinematic camera transitions synchronized with boss skills, event intros, and narrative sequences.</li>
+            <li><strong>Conditional Systems:</strong> Advanced usage of MetaSkills, dynamic variables, delays, condition checks, and interactive triggers.</li>
+          </ul>
+          <div class="card-footer-tags">
+            <span class="mini-tag">Mob AI</span>
+            <span class="mini-tag">Cinematics</span>
+            <span class="mini-tag">MetaSkills</span>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: ConditionalEvents -->
+        <article class="specialty-card retro-box">
+          <div class="card-icon-banner">
+            <span class="specialty-icon event-icon">⚡</span>
+            <span class="category-pill">EVENTS & LOGIC</span>
+          </div>
+          <h3 class="specialty-title">ConditionalEvents</h3>
+          <p class="specialty-text">
+            Reactive world automation that transforms static servers into dynamic, living gameplay experiences:
+          </p>
+          <ul class="specialty-list">
+            <li><strong>Dynamic World Events:</strong> Meteor impacts with dinosaur encounters, dynamic goblin ambushes, and interactive world events.</li>
+            <li><strong>Player State & Logic:</strong> WorldGuard region filtering, mounted checks, combat state detection, biomes, and MMOCore Party scaling.</li>
+            <li><strong>Immersive Mechanics:</strong> Sneak reaction windows, BossBar/Title visual alerts, and intelligent AFK/anti-abuse handling.</li>
+          </ul>
+          <div class="card-footer-tags">
+            <span class="mini-tag">World Events</span>
+            <span class="mini-tag">WorldGuard</span>
+            <span class="mini-tag">BossBars</span>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: CoreTools -->
+        <article class="specialty-card retro-box">
+          <div class="card-icon-banner">
+            <span class="specialty-icon tools-icon">⚙️</span>
+            <span class="category-pill">SYSTEMS & SCHEDULERS</span>
+          </div>
+          <h3 class="specialty-title">CoreTools & MythicMobs</h3>
+          <p class="specialty-text">
+            Design and automation of scheduled world events, dimensional spawners, and performance-safe mechanics:
+          </p>
+          <ul class="specialty-list">
+            <li><strong>Automated Schedulers:</strong> Cron-based periodic task execution for recurring world events without requiring manual staff intervention.</li>
+            <li><strong>Dimensional Portal Spawns:</strong> Synchronized wave spawners and entity controllers linked with MythicMobs.</li>
+            <li><strong>Anti-Lag Monitoring:</strong> Radius detection of active players, automatic orphaned entity cleanup, and tick-budget safeguards for stable 20 TPS.</li>
+          </ul>
+          <div class="card-footer-tags">
+            <span class="mini-tag">Schedulers</span>
+            <span class="mini-tag">Portal Spawns</span>
+            <span class="mini-tag">Automation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS & VIDEOS -->
+    <section id="proyectos" class="section projects-section">
+      <div class="section-header">
+        <div class="section-tag">[ SHOWCASE_ARCHIVE.LOG ]</div>
+        <h2 class="section-title">PROYECTOS & VIDEOS</h2>
+        <p class="section-desc">
+          Explora demostraciones grabadas en video y configuraciones reales extraídas de servidores de producción.
+        </p>
+      </div>
+
+      <!-- Barra de Filtros y Búsqueda Arcade -->
+      <div class="filter-controls-container retro-box">
+        <div class="filter-tabs" role="tablist">
+          <button class="filter-btn active" data-filter="all">TODOS</button>
+          <button class="filter-btn" data-filter="mythicmobs">MYTHICMOBS</button>
+          <button class="filter-btn" data-filter="conditionalevents">CONDITIONALEVENTS</button>
+          <button class="filter-btn" data-filter="coretools">CORETOOLS</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="projectSearch" class="retro-input" placeholder="Buscar mecánica, mob, evento..." aria-label="Buscar proyectos">
+        </div>
+      </div>
+
+      <!-- Rejilla de Proyectos (Generada dinámicamente desde projects.js) -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Renderizado dinámico por app.js -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO / DISCORD -->
+    <section id="contacto" class="section contact-section">
+      <div class="section-header">
+        <div class="section-tag">[ TRANSMISSION_STATION ]</div>
+        <h2 class="section-title">CONTACTO & SERVICIOS</h2>
+        <p class="section-desc">¿Necesitas configurar sistemas, eventos o jefes para tu servidor de Minecraft? ¡Hablemos!</p>
+      </div>
+
+      <div class="contact-card retro-box">
+        <div class="contact-terminal">
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">TERMINAL // COMUNICACIÓN</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt-arrow">&gt;</span> estado: <span class="text-neon-green">LISTO PARA TRABAJAR</span></p>
+            <p><span class="prompt-arrow">&gt;</span> plugins: <span class="text-neon-cyan">MythicMobs, ConditionalEvents, CoreTools</span></p>
+            <p><span class="prompt-arrow">&gt;</span> entrega: <span class="text-neon-yellow">Configuraciones optimizadas, sin lag y listas para producción</span></p>
+            <p class="terminal-blink"><span class="prompt-arrow">&gt;</span> esperando mensaje del cliente...</p>
+          </div>
+        </div>
+
+        <div class="contact-methods">
+          <!-- Discord -->
+          <div class="contact-item">
+            <div class="contact-item-icon">💬</div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">DISCORD</span>
+              <span class="contact-item-val" id="discordTag">chto6090</span>
+            </div>
+            <button class="retro-btn btn-copy" data-copy="chto6090" title="Copiar usuario de Discord">
+              COPIAR
+            </button>
+          </div>
+
+          <!-- Correo o GitHub -->
+          <div class="contact-item">
+            <div class="contact-item-icon">📦</div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">GITHUB</span>
+              <span class="contact-item-val">github.com/SebastianMC25</span>
+            </div>
+            <a href="https://github.com/SebastianMC25" target="_blank" rel="noopener noreferrer" class="retro-btn btn-link">
+              VISITAR
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE DETALLES, VIDEO & YAML (LIGHTBOX ARCADE) -->
+  <div class="retro-modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="retro-modal-window retro-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <span class="modal-indicator">▶</span>
+          <h3 id="modalTitle">DETALLE DEL PROYECTO</h3>
+        </div>
+        <button class="retro-btn btn-close" id="btnCloseModal" aria-label="Cerrar ventana">✕ CERRAR</button>
+      </div>
+
+      <!-- Pantalla CRT con Video -->
+      <div class="modal-video-screen retro-box">
+        <div class="video-container" id="modalVideoContainer">
+          <!-- Video iframe o video tag inyectado aquí -->
+        </div>
+      </div>
+
+      <!-- Información y Ficha Técnica del Proyecto (Código Protegido) -->
+      <div class="modal-info-panel">
+        <p id="modalDescription" class="modal-desc"></p>
+        <div class="modal-highlights">
+          <h4>HIGHLIGHTS & CARACTERÍSTICAS TÉCNICAS:</h4>
+          <ul id="modalHighlightsList" class="highlights-list"></ul>
+        </div>
+        <div class="modal-tags" id="modalTagsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICACIÓN TOAST RETRO -->
+  <div id="retroToast" class="retro-toast" role="status" aria-live="polite"></div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="retro-footer">
+    <div class="footer-container">
+      <p class="footer-brand">
+        <span class="pixel-star">★</span> MINECRAFT SYSTEMS & CONFIGURATION PORTFOLIO <span class="pixel-star">★</span>
+      </p>
+      <p class="footer-sub">
+        Hecho con estética retro 8-bit &middot; Alojado gratis en <strong>GitHub Pages</strong>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
