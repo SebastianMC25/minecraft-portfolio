@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAltar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c071e"/>
+      <stop offset="100%" stop-color="#1d1138"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgAltar)"/>
+  
+  <!-- Altar Místico & Invocación de Jefe -->
+  <g transform="translate(240, 50)">
+    <!-- Resplandor arcano / Círculo mágico -->
+    <circle cx="80" cy="120" r="85" fill="#a855f7" opacity="0.15"/>
+    <circle cx="80" cy="120" r="55" fill="#c084fc" opacity="0.2"/>
+    
+    <!-- Base del Altar (Piedra rúnica) -->
+    <rect x="20" y="165" width="120" height="25" fill="#3b0764" rx="3"/>
+    <rect x="35" y="145" width="90" height="20" fill="#581c87" rx="2"/>
+    <rect x="45" y="125" width="70" height="20" fill="#6b21a8" rx="2"/>
+    
+    <!-- Reliquia / Pergamino GPS flotante en el centro -->
+    <g transform="translate(65, 60)">
+      <rect x="0" y="10" width="30" height="40" fill="#fde047" rx="3"/>
+      <rect x="5" y="15" width="20" height="5" fill="#ca8a04"/>
+      <rect x="5" y="24" width="20" height="3" fill="#ca8a04"/>
+      <rect x="5" y="31" width="14" height="3" fill="#ca8a04"/>
+      <!-- Símbolo de brújula GPS / Ojo Arcano -->
+      <polygon points="15,0 23,8 7,8" fill="#a855f7"/>
+      <polygon points="15,16 23,8 7,8" fill="#7e22ce"/>
+    </g>
+    
+    <!-- Cristales de activación y runas -->
+    <rect x="15" y="115" width="12" height="25" fill="#d946ef" rx="2"/>
+    <rect x="133" y="115" width="12" height="25" fill="#d946ef" rx="2"/>
+    
+    <!-- Partículas mágicas de teletransporte / GPS -->
+    <g fill="#c084fc">
+      <rect x="25" y="40" width="6" height="6"/>
+      <rect x="130" y="55" width="6" height="6"/>
+      <rect x="40" y="80" width="4" height="4"/>
+      <rect x="115" y="75" width="4" height="4"/>
+      <rect x="80" y="25" width="6" height="6" fill="#f43f5e"/>
+    </g>
+  </g>
+
+  <!-- Suelo de la sala del jefe -->
+  <rect x="0" y="270" width="640" height="90" fill="#120c1f"/>
+  <rect x="0" y="266" width="640" height="4" fill="#a855f7" opacity="0.6"/>
+
+  <text x="320" y="310" font-family="'Courier New', monospace" font-weight="900" font-size="18" fill="#d946ef" text-anchor="middle" letter-spacing="2">
+    [ SISTEMA DE ALTAR: GPS &amp; BOSS PARTY ]
+  </text>
+  <text x="320" y="335" font-family="'Courier New', monospace" font-size="12" fill="#e9d5ff" text-anchor="middle">
+    CONDITIONALEVENTS &bull; GPS SCROLL &bull; REGION LOCKOUT &bull; REWARD COOLDOWN
+  </text>
+</svg>

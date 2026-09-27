@@ -124,6 +124,44 @@ const MINECRAFT_PROJECTS = [
     ]
   },
 
+  {
+    id: "ce-altar-boss-summon",
+    title: "Altar Boss Summon: GPS Scroll & Party Region Lockout",
+    category: "conditionalevents",
+    categoryLabel: "CONDITIONALEVENTS",
+    videoType: "mp4",
+    videoSrc: "videos/altarspawn.mp4",
+    thumbnail: "assets/images/thumb-altar.svg",
+    tags: ["ConditionalEvents", "GPS Scroll", "Party Lockout", "Boss Altar", "Cinematics", "Loot Chest"],
+    description: "**Boss Summoning Altar & Party Lockout**\n\nI reused some of the things I already had on my server and created this.\n\nIt’s a “scroll” that activates a GPS system to guide the player to the location where the boss can be summoned. Once they arrive, they have to interact with the altar, which summons the boss and triggers the cinematic.\n\nWhen entering the region, access is blocked for other players who are not part of the party (if you are in a party). Once they defeat the boss, it drops loot inside a chest.\n\nAfter that, the room is closed again and a 5-minute cooldown starts before someone can use it again.",
+    highlights: [
+      "Real server video demonstration recorded in production.",
+      "GPS navigation scroll guiding the player directly to the hidden boss altar coordinates.",
+      "Dynamic region lockout restricting room access exclusively to the active player or party members.",
+      "Cinematic camera sequence triggered upon altar interaction prior to boss engagement.",
+      "Automated chest loot distribution and 5-minute room cooldown before re-entry is permitted."
+    ]
+  },
+
+  {
+    id: "ce-desert-whirlwind",
+    title: "Desert Whirlwind Hazard: Dynamic Vortex Pull System",
+    category: "conditionalevents",
+    categoryLabel: "CONDITIONALEVENTS",
+    videoType: "mp4",
+    videoSrc: "videos/remolino.mp4",
+    thumbnail: "assets/images/thumb-whirlwind.svg",
+    tags: ["ConditionalEvents", "Desert Biome", "Whirlwind Hazard", "Vortex Pull", "Environmental Damage"],
+    description: "**Desert Whirlwind & Vortex Hazard System**\n\nA dynamic environmental hazard system configured in ConditionalEvents for desert biomes.\n\nPeriodically, a powerful wind vortex (dust devil / whirlwind) spawns near players exploring the desert. The whirlwind pulls nearby players into its vortex, lifting them into the air and inflicting continuous damage until they manage to escape or the storm dissipates.",
+    highlights: [
+      "Real server video demonstration recorded in production.",
+      "Biome-specific environmental hazard detection configured entirely in ConditionalEvents.",
+      "Dynamic vortex suction physics pulling players towards the center of the dust devil.",
+      "Scaled damage over time and vertical launching mechanics while trapped inside.",
+      "Automated timers and random intervals preventing predictable spawn patterns."
+    ]
+  },
+
   // =========================================================================
   // CATEGORY: CORETOOLS & MYTHICMOBS
   // =========================================================================

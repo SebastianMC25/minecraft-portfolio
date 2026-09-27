@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDesert" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241407"/>
+      <stop offset="100%" stop-color="#3d220c"/>
+    </linearGradient>
+    <linearGradient id="vortexGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgDesert)"/>
+
+  <!-- Sol del desierto ardiente -->
+  <circle cx="530" cy="80" r="45" fill="#facc15" opacity="0.4"/>
+  <circle cx="530" cy="80" r="30" fill="#fef08a" opacity="0.7"/>
+
+  <!-- Dunas del desierto -->
+  <path d="M0,280 Q180,240 360,270 T640,250 L640,360 L0,360 Z" fill="#78350f"/>
+  <path d="M0,300 Q220,270 420,305 T640,290 L640,360 L0,360 Z" fill="#451a03"/>
+
+  <!-- Remolino de Viento / Dust Devil Pixel Tornado -->
+  <g transform="translate(320, 50)">
+    <!-- Capas giratorias del embudo de viento -->
+    <!-- Nivel superior (ancho) -->
+    <ellipse cx="0" cy="20" rx="90" ry="18" fill="url(#vortexGrad)" opacity="0.85"/>
+    <ellipse cx="0" cy="40" rx="75" ry="16" fill="url(#vortexGrad)" opacity="0.8"/>
+    <!-- Nivel medio -->
+    <ellipse cx="5" cy="70" rx="60" ry="14" fill="url(#vortexGrad)" opacity="0.85"/>
+    <ellipse cx="-5" cy="100" rx="50" ry="12" fill="url(#vortexGrad)" opacity="0.9"/>
+    <ellipse cx="5" cy="130" rx="40" ry="10" fill="url(#vortexGrad)" opacity="0.85"/>
+    <!-- Nivel bajo (estrecho) -->
+    <ellipse cx="-2" cy="160" rx="30" ry="8" fill="url(#vortexGrad)" opacity="0.9"/>
+    <ellipse cx="2" cy="185" rx="20" ry="6" fill="url(#vortexGrad)" opacity="0.95"/>
+    <ellipse cx="0" cy="205" rx="12" ry="5" fill="#fef08a"/>
+    <circle cx="0" cy="215" r="6" fill="#fef08a"/>
+
+    <!-- Partículas de arena y escombros succionados -->
+    <g fill="#fef08a">
+      <rect x="-105" y="15" width="8" height="8" rx="2"/>
+      <rect x="85" y="30" width="6" height="6" rx="2"/>
+      <rect x="-70" y="60" width="7" height="7" rx="1"/>
+      <rect x="65" y="95" width="8" height="5" rx="1"/>
+      <rect x="-55" y="125" width="6" height="6" rx="1"/>
+      <rect x="45" y="150" width="5" height="5"/>
+      <rect x="-35" y="175" width="4" height="4"/>
+      <rect x="25" y="195" width="4" height="4"/>
+    </g>
+
+    <!-- Indicador de daño / Daño por succión -->
+    <g fill="#ef4444">
+      <polygon points="-80,85 -75,95 -85,95"/>
+      <polygon points="75,115 80,125 70,125"/>
+    </g>
+  </g>
+
+  <!-- Borde inferior estilizado -->
+  <rect x="0" y="270" width="640" height="90" fill="#291405" opacity="0.85"/>
+  <rect x="0" y="266" width="640" height="4" fill="#f59e0b" opacity="0.5"/>
+
+  <text x="320" y="310" font-family="'Courier New', monospace" font-weight="900" font-size="18" fill="#facc15" text-anchor="middle" letter-spacing="2">
+    [ DESERT WHIRLWIND HAZARD SYSTEM ]
+  </text>
+  <text x="320" y="335" font-family="'Courier New', monospace" font-size="12" fill="#fed7aa" text-anchor="middle">
+    CONDITIONALEVENTS &bull; DESERT BIOME &bull; VORTEX PULL &bull; PERIODIC SPAWN
+  </text>
+</svg>
