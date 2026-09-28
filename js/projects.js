@@ -64,6 +64,23 @@ const MINECRAFT_PROJECTS = [
     ]
   },
 
+{
+    id: "mm-spawnaire",
+    title: "Aerial Dragon Hunt & Sky Colossus Event",
+    category: "mythicmobs conditionalevents",
+    categoryLabel: "MYTHICMOBS & CONDITIONALEVENTS",
+    videoType: "mp4",
+    videoSrc: "videos/spawnaire.mp4",
+    thumbnail: "assets/images/thumb-spawnaire.svg",
+    tags: ["MythicMobs","ConditionalEvents","Aerial Combat","Dragon","Sky Boss"],
+    description: "**Aerial Dragon Hunt & Sky Colossus Event**\\n\\nA dynamic aerial combat encounter for players riding flying pets at high altitude (Y≥90). Solo players face 1‑2 Wild Drakonins, while parties of 2+ trigger a high‑tier mini‑boss with a 50 % chance of Drako the Alpha Dragon (450 HP) or Sky Gargoyle King (400 HP). The AI uses a three‑phase distance system: lock‑on and fireball attacks up to 40 blocks, erratic gliding between 40‑55 blocks, and despawn with smoke beyond 55 blocks. Players receive slow‑fall protection and earn MMOCore XP, fireworks and victory announcements on defeat.",
+    highlights: [
+        "Real server video demonstration recorded in production.",
+        "Smart encounter scaling (solo vs. party) with high‑tier mini‑bosses.",
+        "Adaptive three‑phase distance AI with fireball, melee, and despawn phases.",
+        "Player safety (slow‑fall) and reward system (XP, fireworks, announcements)."
+    ]
+},
   // =========================================================================
   // CATEGORY: CONDITIONALEVENTS
   // =========================================================================
