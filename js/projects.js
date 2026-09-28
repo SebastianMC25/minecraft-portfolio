@@ -45,25 +45,6 @@ const MINECRAFT_PROJECTS = [
     ]
   },
 
-  {
-    id: "mm-ce-aerial-navigation",
-    title: "Aerial Navigation & Dynamic In-Flight Mob Encounters",
-    category: "mythicmobs conditionalevents",
-    categoryLabel: "MYTHICMOBS & CONDITIONALEVENTS",
-    videoType: "mp4",
-    videoSrc: "videos/volarspawn.mp4",
-    thumbnail: "assets/images/thumb-air-navigation.svg",
-    tags: ["MythicMobs", "ConditionalEvents", "Aerial Navigation", "Airborne Mobs", "Flight Encounters", "Immersive Travel"],
-    description: "**Aerial Navigation & Dynamic In-Flight Mob Encounters**\n\nAn immersive aerial navigation and combat system engineered using ConditionalEvents and MythicMobs.\n\nWhile the player flies through designated air routes or open skies, the system tracks their airborne velocity and altitude to dynamically generate ambient and hostile aerial mobs along their path. This creates a deeply immersive atmosphere where air travel feels alive, unpredictable, and perilous rather than an empty transit.",
-    highlights: [
-      "Real server video demonstration recorded in production.",
-      "Real-time aerial velocity and altitude tracking configured via ConditionalEvents.",
-      "Dynamic in-flight entity spawning synchronized with MythicMobs flight AI mechanics.",
-      "Seamless airborne combat encounters without disrupting ongoing player travel vectors.",
-      "Optimized despawn radius and entity cleanup to prevent server load during high-speed flight."
-    ]
-  },
-
   // =========================================================================
   // CATEGORY: CONDITIONALEVENTS
   // =========================================================================
