@@ -125,7 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = window.MINECRAFT_PROJECTS || [];
 
     const filtered = list.filter(item => {
-      const matchesCategory = activeFilter === 'all' || item.category === activeFilter;
+      const matchesCategory = activeFilter === 'all' || 
+        item.category === activeFilter || 
+        (Array.isArray(item.category) && item.category.includes(activeFilter)) ||
+        (typeof item.category === 'string' && item.category.includes(activeFilter));
       const q = searchQuery.toLowerCase().trim();
       const matchesSearch = !q || 
         item.title.toLowerCase().includes(q) ||
